@@ -2,3 +2,5 @@
 bing/
 # authentication.iniもAPIキーなので除外
 authentication.ini
+
+pg-behav.txt
