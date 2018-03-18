@@ -1,0 +1,4 @@
+# bing以下はURLが記述されたファイルとと画像フォルダのため除外
+bing/
+# authentication.iniもAPIキーなので除外
+authentication.ini
