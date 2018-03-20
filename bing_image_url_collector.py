@@ -62,12 +62,11 @@ if __name__ == '__main__':
     url_dir_path = os.path.join(save_dir_path, 'url')
     bing_util.make_dir(url_dir_path)
 
- # default 30, Max 150 images
     # ほしい画像枚数．取得するURLリストの上限．
-    num_imgs_required = 100
+    num_imgs_required = 1000
     # Bingリクエスト1回あたりに取得する画像URL．
     # default 30, Max 150 images
-    num_imgs_per_transaction = 30
+    num_imgs_per_transaction = 150
     # 検索キーワード入力
     search_term = "大空直美"
 
