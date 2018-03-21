@@ -37,7 +37,9 @@ def save_urls(results, filepath):
 def get_filename(path, fn, ext):
     return os.path.join(path, '%s.%s' % (fn, ext))
 
+# 得られたURLを記録するファイルを作製する関数
 def gen_url_save_file(search_term, url_dir_path, total_count):
+    # extention(拡張子)
     ext = 'txt'
     fn = bing_util.search_term2file_name(search_term)
     filename = get_filename(url_dir_path, fn, ext)
@@ -52,6 +54,7 @@ def gen_url_save_file(search_term, url_dir_path, total_count):
 
 
 if __name__ == '__main__':
+    # auth.ini読み込み
     config = configparser.ConfigParser()
     config.read('authentication.ini')
     bing_api_key = config['auth']['bing_api_key']
